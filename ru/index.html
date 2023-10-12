@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crypto Pay - Криптоплатежи для телеграм ботов</title>
+	<meta name="description" content="Seamlessly accept crypto payments in your Telegram bots and services.">
+	<link rel="preload" href="../static/fonts/Inter-Regular.woff2" as="font" crossorigin>
+	<link rel="preload" href="../static/fonts/Inter-Medium.woff2" as="font" crossorigin>
+	<link rel="preload" href="../static/fonts/Inter-SemiBold.woff2" as="font" crossorigin>
+	<link rel="stylesheet" href="../static/css/style.min.css">
+	<link rel="shortcut icon" href="../static/img/logo.svg">
+</head>
+<body data-lang="ru">
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="https://t.me/CryptoBot" target="_blank" class="logo header__logo">
+					<img src="../static/img/logo.svg" width="64" height="64" alt="Логотип CryptoBot">
+				</a>
+				<nav class="nav header__nav">
+					<a class="nav__link" href="#use-cases">Примеры</a>
+					<a class="nav__link" href="#features">Особенности</a>
+					<a class="nav__link" href="#start">Как начать</a>
+				</nav>
+				<label class="header__switch" tabindex="0" aria-label="Смена темы">
+					<input type="checkbox" class="vh" tabindex="-1">
+					<img class="header__switch-light" src="../static/img/mode-light.svg" width="40" height="40" alt="Светлая">
+					<img class="header__switch-dark" src="../static/img/mode-dark.svg" width="40" height="40" alt="Тёмная">
+				</label>
+				<a href="http://t.me/CryptoBot?start=pay" target="_blank" class="button header__start">Начать</a>
+			</div>
+		</div>
+	</header>
+	<section class="intro">
+		<div class="container">
+			<div class="intro__wrapper">
+				<div class="intro__info">
+					<h1 class="intro__title">
+						Криптоплатежи для <strong>телеграм ботов</strong>
+					</h1>
+					<p class="caption intro__caption">
+						Легко принимайте криптоплатежи <br>
+						в ваших ботах и сервисах Telegram.
+					</p>
+					<a href="http://t.me/CryptoBot?start=pay" target="_blank" class="button intro__start">Начать</a>
+					<div class="intro__bots">
+						<div class="intro__bots-list">
+							<a href="#" class="intro__bots-link">
+								<picture>
+									<source type="image/webp" srcset="../static/img/bot-1.webp">
+									<img src="../static/img/bot-1.png" width="88" height="88" alt="Бот #1">
+								</picture>
+							</a>
+							<a href="#" class="intro__bots-link">
+								<picture>
+									<source type="image/webp" srcset="../static/img/bot-2.webp">
+									<img src="../static/img/bot-2.png" width="88" height="88" alt="Бот #2">
+								</picture>
+							</a>
+							<a href="#" class="intro__bots-link">
+								<picture>
+									<source type="image/webp" srcset="../static/img/bot-3.webp">
+									<img src="../static/img/bot-3.png" width="88" height="88" alt="Бот #3">
+								</picture>
+							</a>
+							<a href="#" class="intro__bots-link">
+								<picture>
+									<source type="image/webp" srcset="../static/img/bot-4.webp">
+									<img src="../static/img/bot-4.png" width="88" height="88" alt="Бот #4">
+								</picture>
+							</a>
+							<a href="#" class="intro__bots-link">
+								<picture>
+									<source type="image/webp" srcset="../static/img/bot-5.webp">
+									<img src="../static/img/bot-5.png" width="88" height="88" alt="Бот #5">
+								</picture>
+							</a>
+						</div>
+						<p class="intro__bots-caption">Популярные боты используют Crypto Pay</p>
+					</div>
+				</div>
+				<div class="intro__demo">
+					<picture>
+						<source type="image/webp" srcset="../static/img/intro-usage-light.webp">
+						<img src="../static/img/intro-usage-light.png" width="310" height="643" alt="Пример использования">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="slider" id="use-cases">
+		<div class="container">
+			<div class="slider__wrapper">
+				<div class="slider__list">
+					<div class="slider__item slider__item--current slider__item--current-enter" data-slider-order="1">
+						<div class="slider__figure slider__figure--1 watch-only" aria-label="Пример отправки 5,5 USDT боту за VPN сервис">
+							<div class="tg">
+								<div class="tg__message" data-tg-time="21:25">
+									<span class="tg__icon-left tg__icon-left--money">Вы отправили 5,5 USDT ($5.50).</span>
+									<br><br>
+									<strong>Получатель:</strong> GoodsBot
+									<br><br>
+									<span class="tg__icon-left tg__icon-left--receipt tg__icon-right tg__icon-right--flash">1 месяц молниеносного VPN</span>
+								</div>
+								<div class="tg__message tg__message--tail" data-tg-time="21:25">
+									<span class="tg__icon-left tg__icon-left--key">API-токен: VPN-X3Y7-Z1W9-R6T2-<br>Q4V8</span>
+								</div>
+							</div>
+						</div>
+						<div class="slider__info">
+							<h2 class="slider__title">
+								<strong>Мгновенные <br> автоплатежи:</strong> <br>
+								Повысьте конверсию
+							</h2>
+							<p class="caption slider__caption">
+								Моментально предоставляйте цифровые <br> продукты
+								и услуги своим пользователям.
+							</p>
+							<a href="https://help.crypt.bot/crypto-pay-api" target="_blank" class="button slider__btn">Документация</a>
+						</div>
+					</div>
+					<div class="slider__item" data-slider-order="2">
+						<div class="slider__figure slider__figure--2 watch-only" aria-label="Пример подписки на приватный канал за 3,5 TON">
+							<div class="tg">
+								<div class="tg__message tg__message--with-controls" data-tg-time="21:30">
+									<span class="tg__icon-left tg__icon-left--money">Вы отправили 3,5 TON ($5.08).</span>
+									<br><br>
+									<strong>Получатель:</strong> CuteCats Channel
+									<br><br>
+									<span class="tg__icon-left tg__icon-left--receipt tg__icon-right tg__icon-right--cat">Эксклюзивный доступ к каналу</span>
+								</div>
+								<div class="tg__controls tg__controls--single">
+									<div class="tg__control tg__control--row tg__control--last tg__control--link">
+										<span>Открыть канал</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider__info">
+							<h2 class="slider__title">
+								<strong>Интеграция <br> каналов:</strong> <br>
+								Бесшовный <br> доступ
+							</h2>
+							<p class="caption slider__caption">
+								Автоматически разблокируйте эксклюзивный контент для ваших пользователей
+							</p>
+							<a href="https://help.crypt.bot/crypto-pay-api" target="_blank" class="button slider__btn">Документация</a>
+						</div>
+					</div>
+					<div class="slider__item" data-slider-order="3">
+						<div class="slider__figure slider__figure--3 watch-only" aria-label="Пример использования веб-хуков для вашего сервиса">
+							<div class="tg">
+								<div class="tg__message tg__message--pb" data-tg-time="22:10">
+									<span class="tg__icon-left tg__icon-left--money">Вы отправили 3,99 USDT ($3.99).</span>
+									<br><br>
+									<strong>Получатель:</strong> <i>@StoresBot</i>
+									<br><br>
+									<span class="tg__icon-left tg__icon-left--receipt tg__icon-right tg__icon-right--star">Один месяц премиум-доступа</span>
+								</div>
+							</div>
+							<code class="code slider__figure-code">
+								<span class="code__blue">Invoice</span>(<br>
+   									<span class="code__tab code__blue">payload:</span> “item:monthly_premium”,<br>
+   									<span class="code__tab code__blue">status:</span> “paid”,<br>
+   									<span class="code__tab code__blue">amount:</span> “3.99”,<br>
+   									<span class="code__tab code__blue">asset:</span> “USDT”<br>
+   								)
+							</code>
+						</div>
+						<div class="slider__info">
+							<h2 class="slider__title">
+								<strong>Безграничная <br> настройка:</strong> <br>
+								при помощи <br> Веб-хуков
+							</h2>
+							<p class="caption slider__caption">
+								Получайте уведомления об успешных платежах
+								в режиме реального времени. <br>
+								Совмещайте с любым сценарием вашего сервиса.
+							</p>
+							<a href="https://help.crypt.bot/crypto-pay-api#webhooks" target="_blank" class="button slider__btn">Документация</a>
+						</div>
+					</div>
+				</div>
+				<div class="slider__nav">
+					<span class="slider__nav-order slider__nav-order--current">01</span>
+					<div class="slider__nav-dots">
+						<button type="button" class="slider__nav-dot slider__nav-dot--current" disabled data-slider-dot="1">
+							<span class="vh">Перейти к первому слайду</span>
+						</button>
+						<button type="button" class="slider__nav-dot" data-slider-dot="2">
+							<span class="vh">Перейти ко второму слайду</span>
+						</button>
+						<button type="button" class="slider__nav-dot" data-slider-dot="3">
+							<span class="vh">Перейти к третьему слайду</span>
+						</button>
+					</div>
+					<span class="slider__nav-order">03</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="features" id="features">
+		<div class="container">
+			<h2 class="vh">Особенности</h2>
+			<div class="features__wrapper">
+				<div class="features__list">
+					<div class="features__row features__header">
+						<div class="feature feature--header">
+							<h3 class="feature__title">Принимаем широкий спектр криптовалют</h3>
+							<p class="feature__caption">
+								Оплачивайте любые поддерживаемые криптовалюты с параметром <span>asset</span> в методе
+								<a href="https://help.crypt.bot/crypto-pay-api#getInvoices" target="_blank">GetInvoices</a>
+							</p>
+							<ul class="feature__crypto watch-only">
+								<li class="feature__crypto-item feature__crypto-item--left feature__crypto-item--active">
+									<div class="feature__crypto-img">
+										<img src="../static/img/crypto-eth.svg" width="96" height="96" loading="lazy" alt="">
+									</div>
+									<span class="feature__crypto-caption">ETH</span>
+								</li>
+								<li class="feature__crypto-item feature__crypto-item--left">
+									<div class="feature__crypto-img">
+										<img src="../static/img/crypto-usdt.svg" width="96" height="96" loading="lazy" alt="">
+									</div>
+									<span class="feature__crypto-caption">USDT</span>
+								</li>
+								<li class="feature__crypto-item feature__crypto-item--left">
+									<div class="feature__crypto-img">
+										<img src="../static/img/crypto-ton.svg" width="96" height="96" loading="lazy" alt="">
+									</div>
+									<span class="feature__crypto-caption">TON</span>
+								</li>
+								<li class="feature__crypto-item feature__crypto-item--left">
+									<div class="feature__crypto-img">
+										<img src="../static/img/crypto-btc.svg" width="96" height="96" loading="lazy" alt="">
+									</div>
+									<span class="feature__crypto-caption">BTC</span>
+								</li>
+								<li class="feature__crypto-item feature__crypto-item--right">
+									<div class="feature__crypto-img">
+										<img src="../static/img/crypto-trx.svg" width="96" height="96" loading="lazy" alt="">
+									</div>
+									<span class="feature__crypto-caption">TRX</span>
+								</li>
+								<li class="feature__crypto-item feature__crypto-item--right">
+									<div class="feature__crypto-img">
+										<img src="../static/img/crypto-ltc.svg" width="96" height="96" loading="lazy" alt="">
+									</div>
+									<span class="feature__crypto-caption">LTC</span>
+								</li>
+								<li class="feature__crypto-item feature__crypto-item--right">
+									<div class="feature__crypto-img">
+										<img src="../static/img/crypto-usdc.svg" width="96" height="96" loading="lazy" alt="">
+									</div>
+									<span class="feature__crypto-caption">USDC</span>
+								</li>
+								<li class="feature__crypto-item feature__crypto-item--right">
+									<div class="feature__crypto-img">
+										<img src="../static/img/crypto-bnb.svg" width="96" height="96" loading="lazy" alt="">
+									</div>
+									<span class="feature__crypto-caption">BNB</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="features__grid">
+						<div class="features__grid-split">
+							<div class="feature feature--small feature--click">
+								<div class="feature__frame animation-click watch-only">
+									<div class="animation-click__button">
+										<span>Создать приложение</span>
+									</div>
+									<svg class="animation-click__cursor" xmlns="http://www.w3.org/2000/svg" width="45" height="48" viewBox="0 0 86 93" fill="none">
+										<path d="M22.255 6.29353C13.4356 1.24897 2.72946 8.76307 4.47549 18.7721L14.9182 78.6345C17.029 90.7346 33.8003 92.2253 38.0121 80.6871L44.9894 61.5729C45.564 59.9989 47.0587 58.9498 48.7343 58.9445L69.082 58.8805C81.3648 58.8419 85.6643 42.5627 75.0023 36.4642L22.255 6.29353Z" fill="url(#paint0_linear_1429_363)" stroke="#F1F5F9" stroke-width="8"/>
+										<defs>
+											<linearGradient id="paint0_linear_1429_363" x1="3.80612" y1="-67.6602" x2="-48.6216" y2="77.5351" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#9FCCFA"/>
+												<stop offset="1" stop-color="#0974F1"/>
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
+								<h3 class="feature__title">Клик до старта</h3>
+								<p class="feature__caption">Откройте <a href="http://t.me/CryptoBot?start=pay" target="_blank">@CryptoBot</a>, перейдите в раздел <span>Crypto Pay</span> и нажмите <span>Создать приложение</span>, чтобы получить <span>API-токен</span></p>
+							</div>
+							<div class="feature feature--small feature--swap">
+								<div class="feature__frame animation-swap watch-only">
+									<div class="animation-swap__list">
+										<div class="animation-swap__item animation-swap__item--third">
+											<svg width="97" height="96" viewBox="0 0 97 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="0.714355" width="96" height="96" rx="48" fill="url(#paint0_linear_955_3970)"/>
+												<path d="M71.5022 22.6909H25.3081V33.8431H42.8291V50.2347H53.9812V33.8431H71.5022V22.6909Z" fill="white"/>
+												<path d="M48.5113 51.9808C34.0174 51.9808 22.2666 49.6869 22.2666 46.8569C22.2666 44.0274 34.0169 41.7331 48.5113 41.7331C63.0051 41.7331 74.7554 44.0274 74.7554 46.8569C74.7554 49.6869 63.0051 51.9808 48.5113 51.9808ZM77.9795 47.7111C77.9795 44.0621 64.7863 41.1042 48.5113 41.1042C32.2367 41.1042 19.0425 44.0621 19.0425 47.7111C19.0425 50.9246 29.2731 53.6019 42.8298 54.1951V77.7258H53.981V54.2044C67.6421 53.6297 77.9795 50.9412 77.9795 47.7111Z" fill="white"/>
+												<defs>
+													<linearGradient id="paint0_linear_955_3970" x1="9.87799" y1="131.782" x2="57.4416" y2="30.5454" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#8DDAD5"/>
+														<stop offset="1" stop-color="#1BA27A"/>
+													</linearGradient>
+												</defs>
+											</svg>
+										</div>
+										<div class="animation-swap__item animation-swap__item--second">
+											<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="0.143066" width="96" height="96" rx="48" fill="url(#paint0_linear_955_3980)"/>
+												<path d="M71.2642 41.0905C72.3168 34.0423 66.9489 30.2551 59.6033 27.7264L61.9828 18.1746L56.1718 16.7269L53.8558 26.0239C52.33 25.6438 50.7601 25.2832 49.2015 24.9299L51.5329 15.5713L45.7219 14.1236L43.3403 23.6663C42.0757 23.3774 40.8317 23.0937 39.6267 22.7936L39.6339 22.7648L31.6196 20.7639L30.0728 26.9728C30.0728 26.9728 34.3868 27.9602 34.2933 28.0199C36.6498 28.6069 37.0746 30.1626 37.0027 31.398L34.2923 42.2781C34.4568 42.319 34.6645 42.3795 34.8948 42.4718L34.282 42.3192L30.4807 57.5609C30.1935 58.2754 29.4635 59.3469 27.8175 58.9412C27.8751 59.0254 23.5939 57.889 23.5939 57.889L20.7092 64.542L28.2763 66.4271C29.6828 66.7775 31.0625 67.1474 32.4176 67.4937L30.0155 77.1535L35.8224 78.6002L38.203 69.0442C39.7864 69.4735 41.3255 69.8701 42.8348 70.2461L40.4614 79.7558L46.2724 81.2034L48.6734 71.5652C58.5841 73.4402 66.0451 72.683 69.1786 63.7164C71.7062 56.4984 69.0536 52.3309 63.8377 49.6166C67.6402 48.7472 70.5028 46.2505 71.2642 41.0905ZM57.9853 59.7139C56.1876 66.9302 44.0333 63.0333 40.0893 62.0508L43.2781 49.2505C47.22 50.2412 59.8599 52.1891 57.9853 59.7139ZM59.7772 40.9845C58.1413 47.5512 48.0186 44.2128 44.7358 43.3993L47.6265 31.7956C50.9124 32.6142 61.4868 34.1392 59.7772 40.9845Z" fill="white"/>
+												<path d="M34.3657 42.0254L35.2294 42.2405L35.0706 42.8779L34.2069 42.6627L34.3657 42.0254Z" fill="white"/>
+												<defs>
+													<linearGradient id="paint0_linear_955_3980" x1="-16.4388" y1="163.2" x2="78.6885" y2="3.29727e-06" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#FF930F"/>
+														<stop offset="1" stop-color="#FBC411"/>
+													</linearGradient>
+												</defs>
+											</svg>
+										</div>
+										<div class="animation-swap__item animation-swap__item--first">
+											<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="0.428711" width="96" height="96" rx="48" fill="url(#paint0_linear_955_3976)"/>
+												<path d="M64.8175 26.7903H32.0374C26.0103 26.7903 22.1904 33.2917 25.2225 38.5475L45.4531 73.6129C46.7733 75.9025 50.0817 75.9025 51.4018 73.6129L71.6366 38.5475C74.6647 33.3001 70.8446 26.7903 64.8216 26.7903H64.8175ZM45.4366 63.0973L41.0307 54.5703L30.3998 35.5566C29.6985 34.3397 30.5647 32.7802 32.0333 32.7802H45.4325V63.1014L45.4366 63.0973ZM66.4469 35.5525L55.8201 54.5744L51.4142 63.0973V32.7761H64.8134C66.282 32.7761 67.1482 34.3355 66.4469 35.5525Z" fill="white"/>
+												<defs>
+													<linearGradient id="paint0_linear_955_3976" x1="89.8833" y1="-7.41818" x2="14.3923" y2="117.382" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#04BEFE"/>
+														<stop offset="1" stop-color="#4481EB"/>
+													</linearGradient>
+												</defs>
+											</svg>
+										</div>
+									</div>
+									<div class="animation-swap__btn">
+										<svg xmlns="http://www.w3.org/2000/svg" width="21" height="11" viewBox="0 0 21 11" fill="none">
+											<path d="M1 5.45438H20.01M20.01 5.45438L15.5556 1M20.01 5.45438L15.5556 9.90876" stroke="#29313D" stroke-opacity="0.92" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+										</svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+										  <path d="M20.0098 6.36319H0.999765M0.999765 6.36319L5.45415 1.90881M0.999765 6.36319L5.45415 10.8176" stroke="#29313D" stroke-opacity="0.92" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+										</svg>
+									</div>
+									<div class="animation-swap__usd">
+										$
+									</div>
+								</div>
+								<h3 class="feature__title">Актуальные обменные курсы</h3>
+								<p class="feature__caption">
+									Запрашивайте актуальный курс валюты с помощью API-метода
+									<a href="https://help.crypt.bot/crypto-pay-api#getExchangeRates" target="_blank"> getExchangeRates</a>
+								</p>
+							</div>
+						</div>
+						<div class="features__grid-stretch">
+							<div class="feature feature--stats">
+								<div class="feature__frame animation-stats watch-only">
+									<div class="tg animation-stats__wrapper">
+										<div class="tg__message animation-stats__info" data-tg-time="21:30">
+											Статистика приложения <strong>@GoodsBot</strong> за <span class="toggle-stats" data-stats-time>всё время:</span>
+											<br><br>
+											Объем: <span class="toggle-stats" data-stats-volume>$204,920</span>
+											<br><br>
+											Количество созданный счетов: <span class="toggle-stats" data-stats-invoices>16,256</span> <br>
+											Количество платежей: <span class="toggle-stats" data-stats-payments>9,353</span> <br>
+											Количество пользователей: <span class="toggle-stats" data-stats-users>5,606</span>
+											<br><br>
+											Конверсия: <span class="toggle-stats" data-stats-conversion>57%</span>
+										</div>
+										<div class="tg__controls animation-stats__controls">
+											<div class="tg__control tg__control--current animation-stats__control animation-stats__control--current" data-stats-btn-order="0">
+												<span>Всё время</span>
+											</div>
+											<div class="tg__control animation-stats__control" data-stats-btn-order="1">
+												<span>Сегодня</span>
+											</div>
+											<div class="tg__control animation-stats__control" data-stats-btn-order="2">
+												<span>Вчера</span>
+											</div>
+											<div class="tg__control animation-stats__control">
+												<span>Неделя</span>
+											</div>
+											<div class="tg__control tg__control--row animation-stats__control">
+												<span>Месяц</span>
+											</div>
+											<div class="tg__control tg__control--row tg__control--back tg__control--last animation-stats__control">
+												<span>Назад</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h3 class="feature__title">Статистика платежей</h3>
+								<p class="feature__caption">
+									Откройте <a href="http://t.me/CryptoBot?start=pay" target="_blank">@CryptoBot</a>, перейдите в раздел <span>Crypto Pay</span>, затем <span>Мои приложения</span> и Название приложения для получения Статистики</p>
+							</div>
+						</div>
+					</div>
+					<div class="features__row">
+						<div class="feature feature--send">
+							<div class="feature__frame animation-send watch-only">
+								<div class="animation-send__messages">
+									<div class="animation-send__message animation-send__message--current">
+										<picture>
+											<source type="image/webp" srcset="../static/img/animation/animation-send-message-1-light.webp">
+											<img src="../static/img/animation/animation-send-message-1-light.png" width="400" height="130" loading="lazy" alt="💸 You recieved 3448 TON from @CryptoBot 💬 Design contest awards 🏅">
+										</picture>
+									</div>
+									<div class="animation-send__message">
+										<picture>
+											<source type="image/webp" srcset="../static/img/animation/animation-send-message-2-light.webp">
+											<img src="../static/img/animation/animation-send-message-2-light.png" width="400" height="130" loading="lazy" alt="💸 You recieved 8478 TON from @CryptoBot 💬 Congrats! You are winner 🙌">
+										</picture>
+									</div>
+									<div class="animation-send__message">
+										<picture>
+											<source type="image/webp" srcset="../static/img/animation/animation-send-message-3-light.webp">
+											<img src="../static/img/animation/animation-send-message-3-light.png" width="400" height="130" loading="lazy" alt="💸 You recieved 2300 TON from @CryptoBot 💬 We appreciate your interest 🚀">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<h3 class="feature__title">Отправляйте монеты пользователям</h3>
+							<p class="feature__caption">
+								Автоматизируйте выплаты пользователям с помощью API-метода
+								<a href="https://help.crypt.bot/crypto-pay-api#transfer" target="_blank">transfer</a>
+							</p>
+						</div>
+						<div class="feature feature--small feature--payments">
+							<div class="feature__frame animation-payments watch-only">
+								<div class="animation-payments__messages">
+									<div class="animation-payments__message animation-payments__message--current">
+										<picture>
+											<source type="image/webp" srcset="../static/img/animation/animation-payments-message-1.webp">
+											<img src="../static/img/animation/animation-payments-message-1.png" width="324" height="118" loading="lazy" alt="🌴 Anonymous paid your invoice You recieved 3442 TON 💬 A generous donation! Keep working hard 💪">
+										</picture>
+									</div>
+									<div class="animation-payments__message">
+										<picture>
+											<source type="image/webp" srcset="../static/img/animation/animation-payments-message-2.webp">
+											<img src="../static/img/animation/animation-payments-message-2.png" width="324" height="118" loading="lazy" alt="🌴Anonymous paid your invoice You recieved 3823 TON 💬 A bountiful gift! Keep reaching for the stars! 🙌">
+										</picture>
+									</div>
+									<div class="animation-payments__message">
+										<picture>
+											<source type="image/webp" srcset="../static/img/animation/animation-payments-message-3.webp">
+											<img src="../static/img/animation/animation-payments-message-3.png" width="324" height="118" loading="lazy" alt="🌴 Anonymous paid your invoice You recieved 3442 TON 💬 A substantial gift! Keep striving for excellence! 🎉">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<h3 class="feature__title">Анонимные платежи</h3>
+							<p class="feature__caption">
+								Используйте параметр <span>allow_anonymous</span> в методе
+								<a href="https://help.crypt.bot/crypto-pay-api#createInvoice" target="_blank">createInvoice</a>, чтобы предоставить пользователю возможность оставаться неизвестным 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="start" id="start">
+		<div class="container">
+			<h2 class="start__title">Быстрый старт, используя <strong>Crypto Pay</strong></h2>
+			<ol class="start__list">
+				<li class="start__item">
+					<div class="start__item-info">
+						<h3 class="start__item-title" data-start-order="1">Авторизация вашего приложения</h3>
+						<div class="start__item-content">
+							<ol class="start__item-list">
+								<li>Откройте 
+									<a href="http://t.me/CryptoBot?start=pay" target="_blank">@CryptoBot</a>
+								</li>
+								<li>Перейдите в раздел <strong>Crypto Pay</strong></li>
+								<li>Нажмите <strong>Create App</strong></li>
+								<li>Получите <strong>API-Токен</strong></li>
+							</ol>
+						</div>
+					</div>
+					<div class="start__item-figure start__item-figure--1 watch-only" aria-label="Example of getting token for your own app">
+						<div class="tg start__item-figure-tg">
+							<div class="tg__message tg__message--pb" data-tg-time="21:30">
+								Вот токен для приложения <strong>@GoodsBot</strong>
+								<br><br>
+								114935:AA9xMcRqHYZYl6CQlkhBStMAwT<br>FQ1s6iJHM
+								<br><br>
+								<span class="tg__icon-left tg__icon-left--warning">
+									Этот токен может быть использован кем угодно
+									для управления вашим приложением. <br> 
+									Храните его в безопасности.
+								</span>
+							</div>
+							<div class="tg__controls tg__controls--single">
+								<div class="tg__control tg__control--row tg__control--last tg__control--start">
+									<span>Отзыв Токена</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="start__item">
+					<div class="start__item-info">
+						<h3 class="start__item-title" data-start-order="2">Запрос Crypto Pay API</h3>
+						<div class="start__item-content">
+							<p>
+								Запросы обслуживаются только <br>
+								по протоколу HTTPS. <br>
+								Для передачи параметров используйте:
+							</p>
+							<ul class="start__item-list start__item-list--blue">
+								<li>URL query string</li>
+								<li>application/json </li>
+								<li>application/x-www-form-urlencoded</li>
+								<li>multipart/form-data</li>
+							</ul>
+						</div>
+					</div>
+					<div class="start__item-figure start__item-figure--2 watch-only" aria-label="Example of Crypto Pay API request">
+						<code class="code">
+							asset<span class="code__blue">=</span><span class="code__yellow">TON</span><span class="code__orange">&</span>amount<span class="code__blue">=</span><span class="code__yellow">2.75</span><br>
+							{"asset":<span class="code__blue"> "TON"</span>, "amount": <span class="code__blue">"2.75"</span>}
+						</code>
+					</div>
+				</li>
+				<li class="start__item">
+					<div class="start__item-info">
+						<h3 class="start__item-title" data-start-order="3">Получение обновлений</h3>
+						<div class="start__item-content">
+							<p>
+								Существует два способа получения <br>
+								обновлений для вашего приложения:
+							</p>
+							<ul class="start__item-list">
+								<li>
+									<span>Метод</span> <a href="https://help.crypt.bot/crypto-pay-api#getInvoices" target="_blank">getInvoices</a> <span>для получения списка созданных счетов</span>
+								</li>
+								<li>
+									<a href="https://help.crypt.bot/crypto-pay-api#webhooks" target="_blank">Веб-хуки</a> 
+									<span>для получения обновлений в режиме реального времени</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="start__item-figure start__item-figure--3 watch-only" aria-label="Example of receiving updates from Crypto Pay webhooks">
+						<code class="code">
+							<span class="code__blue">Invoice</span>(<br>
+								<span class="code__tab code__blue">payload:</span> “item:monthly_premium”,<br>
+								<span class="code__tab code__blue">status:</span> “paid”,<br>
+								<span class="code__tab code__blue">amount:</span> “3.99”,<br>
+								<span class="code__tab code__blue">asset:</span> “USDT”<br>
+							)
+						</code>
+					</div>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="api">
+		<div class="container">
+			<div class="api__wrapper">
+				<div class="api__info">
+					<h2 class="api__title">Crypto Pay API</h2>
+					<p class="caption api__caption">
+						Изучите доступные методы и типы <br> и внедрите их в любой язык программирования.
+					</p>
+					<a href="https://help.crypt.bot/crypto-pay-api" class="button button--transparent api__link">Документация</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="dev">
+		<div class="container">
+			<div class="dev__wrapper">
+				<h2 class="dev__title">Присоединяйтесь к сообществу разработчиков</h2>
+				<p class="dev__caption">
+					Общайтесь с разработчиками ботов и изучайте возможности, <br>
+					которые открывает наш сервис криптоплатежей.
+				</p>
+				<div class="dev__list">
+					<a href="https://github.com/Foile/crypto-pay-api" target="_blank" rel="noopener" class="dev__item">
+						<div class="dev__item-img">
+							<img src="../static/img/dev-js.svg" width="96" height="96" loading="lazy" alt="">
+						</div>
+						crypto-<br>pay-api
+					</a>
+					<a href="https://github.com/WinoGarcia/CryptoPay" target="_blank" rel="noopener" class="dev__item">
+						<div class="dev__item-img">
+							<img src="../static/img/dev-net.svg" width="96" height="96" loading="lazy" alt="">
+						</div>
+						CryptoPay
+					</a>
+					<a href="https://github.com/klev-o/crypto-pay-api" target="_blank" rel="noopener" class="dev__item">
+						<div class="dev__item-img">
+							<img src="../static/img/dev-php.svg" width="96" height="96" loading="lazy" alt="">
+						</div>
+						crypto-<br>pay-api
+					</a>
+					<a href="https://github.com/layerqa/aiocryptopay" target="_blank" rel="noopener" class="dev__item">
+						<div class="dev__item-img">
+							<img src="../static/img/dev-python.svg" width="96" height="96" loading="lazy" alt="">
+						</div>
+						aiocrypto<br>pay
+					</a>
+					<a href="https://github.com/arthurshafikov/cryptobot-sdk-golang" target="_blank" rel="noopener" class="dev__item">
+						<div class="dev__item-img">
+							<img src="../static/img/dev-go.svg" width="96" height="96" loading="lazy" alt="">
+						</div>
+						cryptobot-<br>sdk-golang
+					</a>
+				</div>
+				<a href="https://t.me/CryptoPayDev" target="_blank" class="button dev__link">Открыть чат разработчиков</a>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<a href="https://t.me/CryptoBot" target="_blank" class="logo footer__logo">
+					<img src="../static/img/logo.svg" width="64" height="64" alt="CryptoBot">
+				</a>
+				<nav class="nav footer__nav">
+					<a class="nav__link" href="#use-cases">Примеры</a>
+					<a class="nav__link" href="#features">Особенности</a>
+					<a class="nav__link" href="#start">Как начать</a>
+				</nav>
+				<div class="footer__lang">
+					<button type="button" class="footer__lang-current">
+						<span>Рус</span>
+					</button>
+					<div class="footer__lang-list">
+						<div class="footer__lang-options">
+							<a href="/">English</a>
+						</div>
+					</div>
+				</div>
+				<a href="http://t.me/CryptoBot?start=pay" target="_blank" class="button button--transparent footer__start">Начать</a>
+			</div>
+			<p class="footer__copyright">©2023 Crypto Bot</p>
+		</div>
+	</footer>
+	<script src="../static/js/main.min.js"></script>
+</body>
+</html>
