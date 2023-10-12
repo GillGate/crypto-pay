@@ -3,7 +3,7 @@
     <img src="static/img/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Crypto Pay</h3>
+  <h1 align="center">Crypto Pay</h1>
 
   <p align="center">
     Landing for CryptoBot Web Contest <br>
