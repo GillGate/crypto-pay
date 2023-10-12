@@ -1,8 +1,7 @@
 <div align="center">
   <a href="https://gillgate.github.io/crypto-pay/">
     <img src="https://gillgate.github.io/crypto-pay/static/img/logo.svg" alt="Logo" width="80" height="80">
-  </a>
-
+  </a>
   <h1 align="center">Crypto Pay</h1>
 <p align="center">
     Landing for CryptoBot Web Contest <br>
@@ -24,10 +23,12 @@ Then install all necessary modules for automated work:
 ```sh
 npm i
 ```
-Last thing (optional):
-_If you launch this project for the first time you may have to generate smartgrid mixins.
+(Optional step):
+_If you launch this project for the first time you may have to generate smartgrid mixins._
+
 Here is [documentation](https://www.npmjs.com/package/smart-grid) for smartgird library.
-This project already generated all needed mixins but if you want to change some details you must open default smartgrid.js file in root directory and change him based on your design layout requirements._
+
+_This project already generated all needed mixins but if you want to change some details you must open default smartgrid.js file in root directory and change him based on your design layout requirements._
 
 To generate mixins type in console:
 ```sh
