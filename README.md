@@ -1,23 +1,18 @@
-<p align="center">
+<div align="center">
   <a href="https://gillgate.github.io/crypto-pay/">
     <img src="https://gillgate.github.io/crypto-pay/static/img/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">Crypto Pay</h1>
-
-  <p align="center">
+<p align="center">
     Landing for CryptoBot Web Contest <br>
     <a href="https://t.me/CryptoBotRU/225">Learn more</a>
-    <br/>
-    <br/>
   </p>
-</p>
+</div>
 
 ## Getting Started
 
-This is instruction how to start this project locally if you want to change some details such as animation durations and more.
-
-### Installation
+This is instruction how to start this project locally if you want to change some details such as animation durations and more.
 
 To start we need to install all modules for automated processes such as assembly and optimization css and js files.
 
@@ -53,4 +48,4 @@ npm run build
 
 ## P.S.
 
-Made to CryproBot with ❤️
+Made to CryptoBot with ❤️
