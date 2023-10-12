@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://gillgate.github.io/crypto-pay/">
-    <img src="static/img/logo.svg" alt="Logo" width="80" height="80">
+    <img src="https://gillgate.github.io/crypto-pay/static/img/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">Crypto Pay</h1>
