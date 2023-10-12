@@ -1,0 +1,129 @@
+html[lang="ru"] {
+	h1 {
+		.xxs-block({
+			font-size: 40px;
+			line-height: 44px;
+		});
+	}
+
+	.intro {
+		&__info {
+			max-width: 760px;
+		}
+
+		&__demo {
+			.md-block({
+				min-width: 250px;
+			});
+
+			.sm-block({
+				min-width: 200px;
+			});
+		}
+
+		&__bots {
+			&-caption {
+				font-size: 16px;
+
+				.xxs-block({
+					font-size: 14px;
+				});
+			}
+		}
+	}
+
+	.slider {
+		&__title {
+			.xs-block({
+				font-size: 26px; // for 2 rows title
+				line-height: 32px;
+			});
+
+			strong {
+				.md-block({
+					display: block;
+				});
+			}
+
+			br {
+				.md-block({
+					display: none;
+				});
+			}
+		}
+
+		&__caption {
+			.md-block({
+				min-height: 69px;
+			});
+
+			.xs-block({
+				min-height: 88px;
+			});
+		}
+	}
+
+	.feature {
+		&__title {
+			.xs-block({
+				font-size: 26px;
+			});
+		}
+	}
+
+	.animation-click {
+		&__button {
+			height: 58px;
+
+			span{
+				font-size: 18px;
+				line-height: 56px;
+
+				.xs-block({
+					font-size: 15px;
+				});
+
+				.xxs-block({
+					font-size: 14px;
+				});
+
+				&::before {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+
+	.animation-stats {
+		&__wrapper {
+			min-width: 440px;
+
+			.xs-block({
+				min-width: auto;
+			});
+		}
+	}
+
+	.start {
+		&__title {
+			strong {
+				.lg-block({
+					display: block;
+				});
+			}
+		}
+	}
+
+	.dev {
+		&__item {
+			.xxs-block({
+				font-size: 16px;
+			});
+		}
+
+		&__link {
+			font-size: 16px;
+		}
+	}
+}

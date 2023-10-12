@@ -1,0 +1,272 @@
+.tg {
+	font-family: "SF Pro", sans-serif;
+
+	&__message {
+		min-width: 392px;
+		margin-bottom: 4px;
+		padding: 10px 16px;
+		font-size: 20.25px;
+		line-height: 23.824px;
+		letter-spacing: -0.596px;
+		color: var(--black);
+		background-color: var(--white);
+		border-radius: 17.868px;
+		position: relative;
+		box-sizing: border-box;
+
+		.sm-block({
+			font-size: 18px;
+			line-height: 20px;
+		});
+
+		.xs-block({
+			min-width: 270px;
+			font-size: 13.901px;
+			line-height: 16.354px;
+			letter-spacing: -0.409px;
+		});
+
+		&--pb {
+			padding-bottom: 32px;
+
+			.sm-block({
+				padding-bottom: 26px;
+			});
+
+			.xs-block({
+				padding-bottom: 14px;
+			});
+		}
+
+		&--tail {
+			&::before {
+				content: '';
+				width: 24px;
+				height: 16px;
+				position: absolute;
+				left: -8.35px;
+				bottom: 0;
+				background: url(../img/tg/tg-tail.svg) no-repeat center / contain;
+			}
+		}
+
+		&--with-controls {
+			border-radius: 17.868px 17.868px 8.338px 8.338px;
+
+			.xs-block({
+				margin-bottom: 2px;
+			});
+		}
+
+		&::after {
+			content: attr(data-tg-time);
+			font-size: 15.485px;
+			line-height: 21.441px;
+			letter-spacing: -0.596px;
+			font-weight: 500;
+			color: var(--black-40);
+			position: absolute;
+			right: 16px;
+			bottom: 10px;
+
+			.sm-block({
+				font-size: 12px;
+				line-height: 16px;
+			});
+
+			.xs-block({
+				font-size: 10.63px;
+				line-height: 14.719px;
+				letter-spacing: -0.409px;
+				right: 12px;
+				bottom: 4px;
+			});
+		}
+
+		strong {
+			color: var(--black);
+			font-weight: 700;
+		}
+
+		i {
+			color: var(--tg-link-color);
+			font-style: normal;
+			font-weight: 510;
+		}
+	}
+
+	&__icon {
+		&-left::before, &-right::after {
+			content: '';
+			display: inline-block;
+			width: 21px;
+			height: 21px;
+			margin-bottom: -2px;
+			vertical-align: baseline;
+			background: no-repeat center / contain;
+
+			.sm-block({
+				width: 16px;
+				height: 16px;
+			});
+
+			.xs-block({
+				width: 13px;
+				height: 13px;
+				margin-bottom: -1px;
+			});
+		}
+
+		&-left {
+			&::before {
+				margin-right: 4px;
+
+				.xs-block({
+					margin-right: 2px;
+				});
+			}
+
+			&--money::before {
+				background-image: url(../img/tg/tg-icon-money.png);
+			}
+
+			&--receipt::before {
+				background-image: url(../img/tg/tg-icon-receipt.png);
+			}
+
+			&--key::before {
+				background-image: url(../img/tg/tg-icon-key.png);
+			}
+
+			&--warning::before {
+				background-image: url(../img/tg/tg-icon-warning.png);
+			}
+		}
+
+		&-right {
+			&::after {
+				margin-left: 4px;
+
+				.xs-block({
+					margin-left: 2px;
+				});
+			}
+
+			&--flash::after {
+				background-image: url(../img/tg/tg-icon-flash.png);
+			}
+
+			&--cat::after {
+				background-image: url(../img/tg/tg-icon-cat.png);
+			}
+
+			&--star::after {
+				background-image: url(../img/tg/tg-icon-star.png);
+			}
+		}
+	}
+
+	&__controls {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -4px;
+
+		&--single {
+			margin: 0;
+		}
+
+		.xs-block({
+			margin: 0 -2px;
+		});
+	}
+
+	&__control {
+		width: calc(50% - 4px);
+		height: 51px;
+		margin: 0px 2px 2px;
+		background-color: #96ADC6;
+		font-size: 20.25px;
+		line-height: 49px;
+		font-weight: 500;
+		text-align: center;
+		color: var(--white);
+		border-radius: 7.831px;
+		transition: background-color .4s ease;
+
+		.sm-block({
+			height: 44px;
+			font-size: 18px;
+			line-height: 42px;
+		});
+
+		.xs-block({
+			width: calc(50% - 2px);
+			height: 35px;
+			margin: 2px 1px 0;
+			font-size: 13.901px;
+			line-height: 33px;
+		});
+
+		&--row {
+			width: 100% !important;
+		}
+
+		&--last {
+			border-radius: 7.831px 7.831px 16.78px 16.78px;
+
+			.xs-block({
+				border-radius: 5.654px 5.654px 12.114px 12.114px;
+			});
+		}
+
+		&--start {
+			background-color: #8198D1;
+		}
+
+		&--link {
+			position: relative;
+
+			&::after {
+				content: '';
+				width: 9px;
+				height: 9px;
+				display: inline-block;
+				background: url(../img/tg/tg-link.svg) no-repeat center / contain;
+				position: absolute;
+				top: 7px;
+				right: 7px;
+
+				.xs-block({
+					width: 6px;
+					height: 6px;
+					top: 5px;
+					right: 5px;
+				});
+			}
+		}
+
+		&--back {
+			span {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				&::before {
+					content: '';
+					display: inline-block;
+					width: 8px;
+					height: 14px;
+					margin-right: 8px;
+					background: url(../img/tg/tg-back.svg) no-repeat center / contain;
+
+					.xs-block({
+						width: 4px;
+						height: 8px;
+						margin-right: 3px;
+						margin-bottom: -1px;
+					});
+				}
+			}
+		}
+	}
+}
