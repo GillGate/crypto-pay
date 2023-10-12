@@ -1,0 +1,81 @@
+.animation-send {
+	height: 358px;
+	background: url(../img/animation/animation-send-phone-light.png) no-repeat center top / contain;
+	border-radius: 0 0 30px 30px;
+
+	.xs-block({
+		height: 200px;
+	});
+
+	&--dark {
+		background-image: url(../img/animation/animation-send-phone-dark.png);
+	}
+
+	&__messages {
+		margin: 0 auto;
+		padding-top: 70px;
+		max-width: 398px;
+		position: relative;
+		z-index: 1;
+
+		.lg-block({
+			max-width: 370px;
+		});
+
+		.xs-block({
+			max-width: 220px;
+			padding-top: 40px;
+		});
+
+		.xxs-block({
+			max-width: 180px;
+		});
+	}
+
+	&__message {
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+
+		&--current {
+			opacity: 1;
+			z-index: 2;
+			animation: getMessage .6s ease-in;
+		}
+
+		&--previous {
+			padding: 0 20px;
+			transform: translateY(-12px);
+			opacity: .7;
+			transition: transform .6s linear, padding .4s linear, opacity .4s ease;
+			z-index: 1;
+
+			.xs-block({
+				padding: 0 16px;
+				transform: translateY(-6px);
+			});
+		}
+
+		img {
+			background-color: var(--primary-bg);
+			border-radius: 24px;
+
+			.xs-block({
+				border-radius: 12px;
+			});
+		}
+	}
+}
+
+@keyframes getMessage {
+	from {
+		transform: translateY(10%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

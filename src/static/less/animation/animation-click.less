@@ -1,0 +1,132 @@
+.animation-click {
+	max-width: 388px;
+	height: 152px;
+	padding-top: 37px;
+	margin: 0 auto;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+
+	.md-block({
+		max-width: 340px;
+	});
+
+	.xs-block({
+		max-width: 280px;
+	});
+
+	&__button {
+		height: 62px;
+		display: inline-block;
+		padding: 0 39px;
+		font-weight: 500;
+		border-radius: 17px;
+		color: var(--main-color);
+		background: var(--animation-click-gradient);
+		border: none;
+		text-align: center;
+		cursor: pointer;
+		animation: hoverButton 3s ease-in infinite;
+
+		span {
+			display: inline-flex;
+			align-items: center;
+			font-size: 22px;
+			line-height: 60px;
+
+			&::before {
+				content: '';
+				display: inline-block;
+				width: 21px;
+				height: 21px;
+				margin-right: 5px;
+				background: url(../img/animation/animation-click-icon.png) no-repeat center / contain;
+			}
+		}
+	}
+
+	&__cursor {
+		position: absolute;
+		right: 20px;
+		bottom: 4px;
+		animation: moveCursor 3s linear alternate infinite;
+
+		&--hover {
+			right: 56px;
+			bottom: 26px;
+		}
+	}
+}
+
+@keyframes moveCursor {
+	0%, 10% {
+		right: 20px;
+		bottom: 4px;
+	}
+
+	30%, 70% {
+		right: 60px;
+		bottom: 26px;
+	}
+
+	90%, 100% {
+		right: 20px;
+		bottom: 4px;
+	}
+}
+
+.lg-block({
+	@keyframes moveCursor {
+		0%, 10% {
+			right: 0px;
+			bottom: 4px;
+		}
+
+		30%, 70% {
+			right: 34px;
+			bottom: 26px;
+		}
+
+		90%, 100% {
+			right: 0px;
+			bottom: 4px;
+		}
+	}
+});
+
+.xs-block({
+	@keyframes moveCursor {
+		0%, 10% {
+			right: -12px;
+			bottom: 4px;
+		}
+
+		30%, 70% {
+			right: 2px;
+			bottom: 24px;
+		}
+
+		90%, 100% {
+			right: -12px;
+			bottom: 4px;
+		}
+	}
+});
+
+@keyframes hoverButton{
+	0%, 100% {
+		background: var(--animation-click-gradient);
+	}
+
+	35%, 75% {
+		background: var(--animation-click-gradient-hover);
+	}
+
+	50%, 60% {
+		transform: none;
+	}
+
+	55% {
+		transform: scale(1.1);
+	}
+}

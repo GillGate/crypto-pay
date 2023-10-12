@@ -1,0 +1,23 @@
+.nav {
+	display: flex;
+	margin: 0 auto;
+
+	.sm-block({
+		display: none;
+	});
+	
+	&__link {
+		margin: 0 16px;
+		font-weight: 500;
+		color: inherit;
+
+		.md-block({
+			margin: 0 8px;
+			font-size: 17px;
+		});
+
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+}
